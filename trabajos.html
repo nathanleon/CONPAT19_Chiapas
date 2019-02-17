@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang=''>
 <head>
@@ -13,42 +15,37 @@
   <!-- css que afecta el slider -->
   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
   <script src="assets/js/script.js"></script>
+  <script>
+   $(function(){
+     $("#includedContent").load("assets/partials/banner-menu.html");
+     $("#includedfooter").load("assets/partials/footer.html");
+   });
+   </script>
   <title>CONPAT MX 2019</title>
 </head>
 
 <body>
   <!-- aquí se carga el footer -->
-  <?php require 'assets/partials/banner-menu.php' ?>
+  <div id="includedContent"></div>
   <!-- aquí se carga el footer -->
   <section class="contenido">
     <div class="content-initial">
-      <div class="content-initial__tittle">
-        <h2>Conferencias magistrales</h2>
+      <div class="contenido-2__tittle">
+        <h2>Envio de trabajos en extenso</h2>
       </div>
-      <div class="content-initial__p">
-        <div class="p-content">
+      <div class="contenido-2__p">
         <p>
-          El CONPAT 2019 se complace en tener como conferencistas magistrales a distinguidos miembros de diversas áreas de nuestra comunidad:
-        <ul>
-            <li><span class="bolder-text">Oladis Troconis de Rincón</span> (Sesión especial por su 70° aniversario, CEC-LUZ, Maracaibo), Venezuela.</li>
-            <li><span class="bolder-text">Paulo Helene</span> (Sesión especial por su 70° aniversario, PhD Ingenieria, Sao Paulo), Brasil.</li>
-            <li><span class="bolder-text">Antonio Aguado de Cea</span> (Premio a la trayectoria Internacional de Alconpat, UPC, Barcelona), España.</li>
-          </ul>
-           Espera noticias nuevas sobre sus temas, su trayectoria y sus sesiones a fin de febrero del 2019.
-         </p>
-       </div>
-      </div>
-      <div class="content-initial__p">
+          GRACIAS por participar, el envio de trabajos está disponible desde el 2 de Noviembre de 2018 y cerrará el 30 de mayo del 2019. Al recibir la aprobación de tu resumen, el sistema te dará acceso automatico a la zona donde podrás cargar tu trabajo en extenso. Si aún no has recibido la aceptación de tu resumen, por favor comunicate con el Dr. Javier Olguín Coca (<a class="bolder-text" href="mailto:conpat2019@gmail.com">olguinc@uaeh.edu.mx</a>), Presidente del comité científico del CONPAT 2019.
+        </p>
         <p class="center-text">
-          <img src="assets/images/doc_106706.png" width="138" height="138">
+          <a href="http://congresoconpat.org/index.php/congresosconpat/conpat2019/login/signIn" target="_blank"><img src="assets/images/nosocios.png" width="138" height="138"></a> <br> Envio de trabajos
         </p>
       </div>
     </div>
   </section>
 
-
   <!-- aquí se carga el footer -->
-  <?php require 'assets/partials/footer.php' ?>
+  <div id="includedfooter"></div>
   <!-- aquí se carga el footer -->
   <script src="assets/js/master.js"></script>
   <script src="assets/js/ideal-image-slider.js"></script>

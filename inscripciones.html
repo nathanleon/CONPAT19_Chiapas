@@ -15,12 +15,18 @@
   <!-- css que afecta el slider -->
   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
   <script src="assets/js/script.js"></script>
+  <script>
+   $(function(){
+     $("#includedContent").load("assets/partials/banner-menu.html");
+     $("#includedfooter").load("assets/partials/footer.html");
+   });
+   </script>
   <title>CONPAT MX 2019</title>
 </head>
 
 <body>
   <!-- aquí se carga el footer -->
-  <?php require 'assets/partials/banner-menu.php' ?>
+  <div id="includedContent"></div>
   <!-- aquí se carga el footer -->
   <section class="contenido">
     <div class="content-initial">
@@ -39,7 +45,7 @@
   </section>
 
   <!-- aquí se carga el footer -->
-  <?php require 'assets/partials/footer.php' ?>
+  <div id="includedfooter"></div>
   <!-- aquí se carga el footer -->
   <script src="assets/js/master.js"></script>
   <script src="assets/js/ideal-image-slider.js"></script>

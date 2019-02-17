@@ -15,23 +15,30 @@
   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
   <script src="assets/js/script.js"></script>
   <title>CONPAT MX 2019</title>
+  <script>
+   $(function(){
+     $("#includedContent").load("assets/partials/banner-menu.html");
+     $("#includedfooter").load("assets/partials/footer.html");
+   });
+   </script>
 </head>
 
 <body>
   <!-- aquí se carga el footer -->
-  <?php require 'assets/partials/banner-menu.php' ?>
+<div id="includedContent"></div>
   <!-- aquí se carga el footer -->
   <section class="contenido">
     <div class="content-initial">
       <div class="content-initial__tittle">
-        <h2>Congresos CONPAT</h2>
+        <h2>Alconpat Internacional</h2>
       </div>
       <div class="content-initial__p">
         <p>
-          ALCONPAT-Internacional da sustento a los congresos CONPAT, cada dos años a nivel internacional en año impar y cada dos años a nivel nacional, en año par, en cada uno de los países miembros, donde se celebra un evento científico que cada vez más da respuesta a los problemas
-          típicos de la construcción. Hasta ahora se han registrado más de 3000 profesionales en los 12 Congresos realizados en Córdoba, Argentina (1991), Barquisimeto, Venezuela (1993), La Habana, Cuba (1995), Porto Alegre, Brasil (1997), Montevideo,
-          Uruguay (1999), Santo Domingo, República Dominicana (2001), Telchac, México (2003), Asunción, Paraguay (2005), Quito, Ecuador (2007), Valparaíso, Chile (2009), La Antigua, Guatemala (2011), Cartagena de Indias, Colombia (2013), Lisboa, Portugal (2015), y Asunción, Paraguay (2017), cuyos presidentes respectivos han sido: Dante Domene, Liana Arrieta de Bustillos, Vitervo O'Reilly, Dario Klein, Ana Inés de la Fuente, Máximo Corominas, Pedro Castro Borges, Angélica Ayala, Rody Cabezas, Patricia Martínez, Francisco Ruiz, Sergio Espejo, Fernando Branco y Margita Kliewer.
-        </p>
+          Asociación Latinoamericana de Control de Calidad, Patología  y Recuperación de la Construcción, Internacional, Asociación Civil se define como una asociación sin fines de lucro, cuyos fines son: <br>
+          <br>
+          a).- Contribuir al desarrollo científico y técnico de toda la comunidad Latinoamericana relacionada con la construcción y sus materiales, con énfasis en la gestión de la calidad, la patología y la recuperación de las construcciones. <br><br>
+          b).- Actuar como interlocutor calificado, tanto de la propia sociedad civil como de sus poderes públicos representativos. <br><br>
+          c).- Promover el papel de la ciencia y la tecnología de la construcción y sus materiales, y contribuir a su difusión como un bien necesario que es para toda la sociedad Latinoamericana. La asociación no tendrá en ningún momento fines lucrativos o económicos en el beneficio de sus asociados.</p>
       </div>
       <div class="content-initial__figure">
         <figure><img src="assets/images/logo-alconpat.png" height="200" alt="AI"></figure>
@@ -41,7 +48,7 @@
   </section>
 
   <!-- aquí se carga el footer -->
-  <?php require 'assets/partials/footer.php' ?>
+  <div id="includedfooter"></div>
   <!-- aquí se carga el footer -->
   <script src="assets/js/master.js"></script>
   <script src="assets/js/ideal-image-slider.js"></script>

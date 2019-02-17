@@ -1,7 +1,6 @@
-
-
 <!doctype html>
 <html lang=''>
+
 <head>
   <meta charset='utf-8'>
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
@@ -15,31 +14,40 @@
   <!-- css que afecta el slider -->
   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
   <script src="assets/js/script.js"></script>
+  <script>
+   $(function(){
+     $("#includedContent").load("assets/partials/banner-menu.html");
+     $("#includedfooter").load("assets/partials/footer.html");
+   });
+   </script>
   <title>CONPAT MX 2019</title>
 </head>
 
 <body>
   <!-- aquí se carga el footer -->
-  <?php require 'assets/partials/banner-menu.php' ?>
+  <div id="includedContent"></div>
   <!-- aquí se carga el footer -->
   <section class="contenido">
     <div class="content-initial">
-      <div class="contenido-2__tittle">
-        <h2>Envio de trabajos en extenso</h2>
+      <div class="content-initial__tittle">
+        <h2>CENTRO DE CONVENCIONES "DR. MANUEL VELASCO SUÁREZ" <br>DE LA UNIVERSIDAD AUTÓNOMA DE CHIAPAS</h2>
       </div>
-      <div class="contenido-2__p">
-        <p>
-          GRACIAS por participar, el envio de trabajos está disponible desde el 2 de Noviembre de 2018 y cerrará el 30 de mayo del 2019. Al recibir la aprobación de tu resumen, el sistema te dará acceso automatico a la zona donde podrás cargar tu trabajo en extenso. Si aún no has recibido la aceptación de tu resumen, por favor comunicate con el Dr. Javier Olguín Coca (<a class="bolder-text" href="mailto:conpat2019@gmail.com">olguinc@uaeh.edu.mx</a>), Presidente del comité científico del CONPAT 2019.
-        </p>
-        <p class="center-text">
-          <a href="http://congresoconpat.org/index.php/congresosconpat/conpat2019/login/signIn" target="_blank"><img src="assets/images/nosocios.png" width="138" height="138"></a> <br> Envio de trabajos
-        </p>
+        <div class="content-initial__figure">
+          <figure><img src="assets/images/UNACH-CATEDRA.jpg" height="250" alt="AI"></figure>
+        </div>
+      <div class="content-initial__figure">
+        <figure><img src="assets/images/punto.png" width="90" height="90"></figure>
       </div>
+      <div class="content-initial__figure">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24474.755998319426!2d-93.152015!3d16.754194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x89cd09477284e00a!2sCentro+de+Convenciones+Manuel+Velasco+Su%C3%A1rez-UNACH!5e1!3m2!1ses!2smx!4v1530157571327" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <br><br>
+      </div>
+
     </div>
   </section>
 
   <!-- aquí se carga el footer -->
-  <?php require 'assets/partials/footer.php' ?>
+  <div id="includedfooter"></div>
   <!-- aquí se carga el footer -->
   <script src="assets/js/master.js"></script>
   <script src="assets/js/ideal-image-slider.js"></script>

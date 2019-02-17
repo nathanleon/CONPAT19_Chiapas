@@ -14,32 +14,45 @@
   <!-- css que afecta el slider -->
   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
   <script src="assets/js/script.js"></script>
+  <script>
+   $(function(){
+     $("#includedContent").load("assets/partials/banner-menu.html");
+     $("#includedfooter").load("assets/partials/footer.html");
+   });
+   </script>
   <title>CONPAT MX 2019</title>
 </head>
 
 <body>
   <!-- aquí se carga el footer -->
-  <?php require 'assets/partials/banner-menu.php' ?>
+  <div id="includedContent"></div>
   <!-- aquí se carga el footer -->
   <section class="contenido">
     <div class="content-initial">
       <div class="content-initial__tittle">
-        <h2>ALCONPAT MÉXICO</h2>
+        <h2>MISIÓN</h2>
       </div>
       <div class="content-initial__p">
         <p>
-          ALCONPAT México es una asociación de profesionales dedicados a la industria de la construcción en todas sus áreas que conjuntanmente coadyuvan a resolver problemas que se presentan en las estructuras desde la planeación, diseño y proyecto hasta la ejecución, construcción, mantenimiento y reparación de las mismas, promoviendo la actualización profesional y la educación como herramientas fundamentales para salvaguardar la calidad e integridad de los servicio de sus profesionales.
+          ALCONPAT Internacional es una Asociación no lucrativa de profesionales dedicados a la industria de la construcción en todas sus áreas, que conjuntamente coadyuvan a resolver los problemas que se presentan en las estructuras desde la planeación, diseño y proyecto hasta la ejecución, construcción, mantenimiento y reparación de las mismas, promoviendo la actualización profesional y la educación como herramientas fundamentales para salvaguardar la calidad y la integridad de los servicios de sus profesionales.
+        </p>
+      </div>
+      <div class="content-initial__tittle">
+        <h2>VISIÓN</h2>
+      </div>
+      <div class="content-initial__p">
+        <p>
+          Ser la Asociación de especialistas en control de calidad y patología de la industria de la construcción con mayor representatividad gremial y prestigio profesional reconocido internacionalmente, buscando siempre el beneficio social y el óptimo aprovechamiento de los recursos humanos, materiales y económicos para la construcción de estructuras sustentables y amigables con el medio ambiente.
         </p>
       </div>
       <div class="content-initial__figure">
-        <figure><img src="assets/images/alconpatmx1.png" height="200" alt="AI"></figure>
+        <figure><img src="assets/images/logo-mundo.png" height="200" alt="AI"></figure>
       </div>
-
-    </div>
+   </div>
   </section>
 
   <!-- aquí se carga el footer -->
-  <?php require 'assets/partials/footer.php' ?>
+  <div id="includedfooter"></div>
   <!-- aquí se carga el footer -->
   <script src="assets/js/master.js"></script>
   <script src="assets/js/ideal-image-slider.js"></script>

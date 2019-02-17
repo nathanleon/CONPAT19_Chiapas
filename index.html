@@ -14,11 +14,17 @@
   <!-- css que afecta el slider -->
   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
   <script src="assets/js/script.js"></script>
+  <script>
+   $(function(){
+     $("#includedContent").load("assets/partials/banner-menu.html");
+     $("#includedfooter").load("assets/partials/footer.html");
+   });
+   </script>
   <title>CONPAT MX 2019</title>
 </head>
 <body>
   <!-- aquí se carga el footer -->
-  <?php require 'assets/partials/banner-menu.php' ?>
+  <div id="includedContent"></div>
   <!-- aquí se carga el footer -->
   <section id="banner-slide">
     <div class="banner">
@@ -73,34 +79,34 @@
       <div class="contenido-3__items">
         <div class="items-c3">
           <div class="contenido-3__p">
-            <a href="programa.php" target="_blank"><img src="assets/images/doc_106706.png" width="142" height="142"></a> <br> Programa del congreso
+            <a href="programa.html" target="_blank"><img src="assets/images/doc_106706.png" width="142" height="142"></a> <br> Programa del congreso
           </div>
         </div>
         <div class="items-c3">
           <div class="contenido-3__p">
-            <a href="magistrales.php" target="_blank"><img src="assets/images/user_106613.png" width="142" height="142"></a> <br> Conferencias <br>magistrales
+            <a href="magistrales.html" target="_blank"><img src="assets/images/user_106613.png" width="142" height="142"></a> <br> Conferencias <br>magistrales
           </div>
         </div>
         <div class="items-c3">
           <div class="contenido-3__p">
-            <a href="tematicas.php" target="_blank"><img src="assets/images/user_106613.png" width="142" height="142"></a> <br> Conferencias <br>temáticas
+            <a href="tematicas.html" target="_blank"><img src="assets/images/user_106613.png" width="142" height="142"></a> <br> Conferencias <br>temáticas
           </div>
         </div>
         <div class="items-c3">
           <div class="contenido-3__p">
-            <a href="paquetes.php" target="_blank"><img src="assets/images/image_106643.png" width="142" height="142"></a> <br> Lugares turísticos
+            <a href="paquetes.html" target="_blank"><img src="assets/images/image_106643.png" width="142" height="142"></a> <br> Lugares turísticos
           </div>
         </div>
         <div class="items-c3">
           <div class="contenido-3__p">
-            <a href="inscripciones.php" target="_blank"><img src="assets/images/pencil_106685.png" width="142" height="142"></a> <br> Incripciones
+            <a href="inscripciones.html" target="_blank"><img src="assets/images/pencil_106685.png" width="142" height="142"></a> <br> Incripciones
           </div>
         </div>
       </div>
     </div>
   </section>
   <!-- aquí se carga el footer -->
-	<?php require 'assets/partials/footer.php' ?>
+  <div id="includedfooter"></div>
 	<!-- aquí se carga el footer -->
   <script src="assets/js/master.js"></script>
   <script src="assets/js/ideal-image-slider.js"></script>

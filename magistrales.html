@@ -13,33 +13,34 @@
   <!-- css que afecta el slider -->
   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
   <script src="assets/js/script.js"></script>
+  <script>
+   $(function(){
+     $("#includedContent").load("assets/partials/banner-menu.html");
+     $("#includedfooter").load("assets/partials/footer.html");
+   });
+   </script>
   <title>CONPAT MX 2019</title>
 </head>
 
 <body>
   <!-- aquí se carga el footer -->
-  <?php require 'assets/partials/banner-menu.php' ?>
+  <div id="includedContent"></div>
   <!-- aquí se carga el footer -->
   <section class="contenido">
     <div class="content-initial">
       <div class="content-initial__tittle">
-        <h2>Conferencias temáticas</h2>
+        <h2>Conferencias magistrales</h2>
       </div>
       <div class="content-initial__p">
         <div class="p-content">
         <p>
-          El CONPAT 2019 se complace en tener como conferencistas temáticos a distinguidos miembros de diversas áreas de nuestra comunidad. Algunos de ellos, confirmados o por confirmar, son:
+          El CONPAT 2019 se complace en tener como conferencistas magistrales a distinguidos miembros de diversas áreas de nuestra comunidad:
         <ul>
-            <li><span class="bolder-text">Dario Lauro Klein</span> (Fellow entrante de Alconpat, UFRGS, Porto Alegre), Brasil. </li>
-            <li><span class="bolder-text">Ravindra Gettu</span> (IIT, Madras), India. </li>
-            <li><span class="bolder-text">Eugenio Oñate Ibañez</span> (CIMNE, Barcelona), España. </li>
-            <li><span class="bolder-text">Elia Alonso Guzmán</span> (UMSNH, Morelia, Michoacán), México. </li>
-            <li><span class="bolder-text">Julio Timerman</span> (IBRACON, Sao Paulo), Brasil. </li>
-            <li><span class="bolder-text">Fernando Branco</span> (IST, Lisboa), Portugal. </li>
-            <li><span class="bolder-text">Roberto Gómez Martínez</span> (SCT, CDMX), México. </li>
-            <li><span class="bolder-text">Bernardo Tutikian</span> (Premio Alconpat al Investigador Productivo, UNISINOS, Porto Alegre), Brasil. </li>
+            <li><span class="bolder-text">Oladis Troconis de Rincón</span> (Sesión especial por su 70° aniversario, CEC-LUZ, Maracaibo), Venezuela.</li>
+            <li><span class="bolder-text">Paulo Helene</span> (Sesión especial por su 70° aniversario, PhD Ingenieria, Sao Paulo), Brasil.</li>
+            <li><span class="bolder-text">Antonio Aguado de Cea</span> (Premio a la trayectoria Internacional de Alconpat, UPC, Barcelona), España.</li>
           </ul>
-           Espera noticias nuevas sobre sus temas, su trayectoria y sus sesiones a fin de febrero del 2019, así como nuevos conferencistas temáticos de Latinoamérica.
+           Espera noticias nuevas sobre sus temas, su trayectoria y sus sesiones a fin de febrero del 2019.
          </p>
        </div>
       </div>
@@ -51,8 +52,9 @@
     </div>
   </section>
 
+
   <!-- aquí se carga el footer -->
-  <?php require 'assets/partials/footer.php' ?>
+  <div id="includedfooter"></div>
   <!-- aquí se carga el footer -->
   <script src="assets/js/master.js"></script>
   <script src="assets/js/ideal-image-slider.js"></script>
