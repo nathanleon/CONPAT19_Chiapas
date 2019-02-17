@@ -1,0 +1,6 @@
+conpat/
+ocs-2.3.6.tar.gz
+config.inc.php
+ocs/
+error_log
+locale.xml
