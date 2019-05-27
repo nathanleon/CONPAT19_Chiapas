@@ -360,6 +360,10 @@ padding: 0;
   /* border: solid 1px blue; */
 }
 
+.sub-tittle{
+  width: 100%;
+  text-align: center;
+}
 
 .red{
 	/*background: red;*/
