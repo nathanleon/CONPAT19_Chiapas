@@ -252,9 +252,28 @@ width: 100%;
   margin: 0 auto 1.5em auto;
   display: flex;
 }
+
+.content-turistico-sede{
+  width: 80%;
+  border: 2px dashed #009ca3;
+  border-radius: 15px;
+  margin: 0 auto 1.5em auto;
+  display: flex;
+  flex-wrap: wrap;
+}
 .foto-turistico{
   /* border: solid 1px cornflowerblue; */
     width: 32%;
+}
+
+.foto-turistico-sede{
+  /* border: solid 1px cornflowerblue; */
+    width: 100%;
+}
+
+.foto-turistico-sede figure{
+  margin: 1em;
+  padding: 0;
 }
 
 .foto-turistico figure{
@@ -265,6 +284,15 @@ width: 100%;
 .foto-turistico img {
   width: 100%;
   border-radius: 15px;
+}
+.foto-turistico-sede img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.info-turistico-sede{
+  width: 95%;
+    padding: 1.2em;
 }
 
 .info-turistico{
